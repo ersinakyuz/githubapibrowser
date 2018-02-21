@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github Navigator</title>
+</head>
+<body>
+    <h1>{{ search_term }}</h1>
+    {% for item in items.values() %}
+        <h2>{{ item.order }}. {{ item.name }}</h2>
+        <h3> Created {{ item.updated_at }}</h3>
+        <a href="{{ item.url }}"><img src="{{ item.avatar_url }}" alt="avatar" height="42" width="42"/></a>
+        {{ item.login }}
+        <h3>LastCommit</h3>
+	{{item.sha}} {{item.commit_message}}  {{item.commit_author_name}}
+        <hr/>
+    {% endfor %}
+</body>
+</html>
