@@ -2,7 +2,7 @@
 
 ## Python Flask application for browsing Github API
 
-###To use
+### To use
 
 Install Flask
 pip install flask
