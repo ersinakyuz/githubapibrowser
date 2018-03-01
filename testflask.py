@@ -9,8 +9,7 @@ from flask import Flask
 app = Flask(__name__)
 @app.route("/retrieve", methods=['GET'])
 def retrieve(search_term):
-        return "Ada vapuru yandan carkli"
+        return "Retrieved!"
 retrieve("ersin")
 if __name__ == "__main__":
     app.run()
-
